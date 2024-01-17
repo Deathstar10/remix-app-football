@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-
+import Search from "./routes/search";
 export default function App() {
   return (
     <html lang="en">
@@ -17,6 +17,8 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Search />
+
         <Outlet />
         <ScrollRestoration />
         <Scripts />
